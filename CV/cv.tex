@@ -1,0 +1,156 @@
+\documentclass{article}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\usepackage{geometry}
+\geometry{top=20mm}
+\geometry{bottom=10mm}
+\geometry{left=20mm}
+\geometry{right=10mm}
+
+\pagenumbering{gobble}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks  = true,
+            linkcolor   = black,
+            urlcolor    = black,
+            citecolor   = black,
+            anchorcolor = black]{hyperref}
+
+\renewcommand{\maketitle}{
+    \begin{center}
+        \Huge
+        \textbf{Ольга Бонецкая}
+    \end{center}
+
+    \footnotesize
+    \begin{minipage}{0.4\textwidth}
+        Телефон: $\boldsymbol{+}$7(925)458-20-91\\[0.3em]
+        Email: \href{mailto:oabonetskaya@edu.hse.ru}{oabonetskaya@edu.hse.ru}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        \begin{flushright}
+            Telegram: {@oly\_bo}\\[0.3em]
+            GitHub: \href{https://github.com/olybo}{olybo}
+        \end{flushright}
+    \end{minipage}
+}
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bf\raggedright}{}{0.5em}{}[{\titlerule[1pt]}]
+\titlespacing{\section}{0pt}{3pt}{7pt}
+\titleformat{\subsection}{\large\bfseries\raggedright}{}{0em}{\underline}%[\rule{3cm}{.2pt}]
+\titlespacing{\subsection}{0pt}{7pt}{7pt}
+
+
+\newcommand{\entry}[3]{
+    \begin{minipage}[t]{.11\linewidth}
+        \hfill \textsc{#1}
+    \end{minipage}
+    \hfill\vline\hfill
+    \begin{minipage}[t]{.80\linewidth}
+        \textbf{#2}\\
+        \footnotesize{#3}
+    \end{minipage}
+}
+
+\begin{document}
+    \maketitle
+
+    \section{Образование}
+        \entry {2017 -- 2021}
+        {Национальный исследовательский университет «Высшая школа экономики»,\\
+         Факультет компьютерных наук, Прикладная математика и информатика}
+        {Очная форма обучения, бакалавриат, 3 курс, программа <<Распределённые системы>>}
+
+
+    \section{Курсы}
+        \entry {2019}
+        {Машинное обучение-1,\\Факультет компьютерных наук НИУ ВШЭ}
+        {}
+        
+        \vspace{.2cm}
+        \entry {2020}
+        {Машинное обучение-2,\\Факультет компьютерных наук НИУ ВШЭ}
+        {В процессе.}
+        
+        \vspace{.2cm}
+        \entry {2020}
+        {Advanced Machine Learning Specialization,\\National Research University Higher School of Economics}
+        {Онлайн-курс на платформе Coursera (в процессе).}
+        
+        \section{Проекты}
+        \entry {2018-2019}
+        {Программный проект по теме "Кластеризация сложных сетей"}
+        {Часть группового проекта по исследованию сложных сетей, тестировала различные алгоритмы кластеризации. Язык Python3.}
+        
+        
+
+    \section{Опыт работы}
+    \entry {2017 -- 2020} 
+    {Преподаватель в Лицее НИУ ВШЭ}
+    {Вела курсы <<Практикум по программированию>> на языке C++ для 10 и 11 классов. Читала курс <<Олимпиадного программирования>> для 9-11 классов.}
+
+    \vspace{.2cm}
+    \entry {2020} 
+    {Ассистент онлайн-курса НИУ ВШЭ <<Основы машинного обучения>>}
+    {Занималась подготовкой и созданием методических материалов для курса, помогала слушателям курса в освоении материала.}
+
+
+    \section{Навыки}
+    \begin{multicols}{2}
+        \subsection{Теоретические знания}
+        \begin{itemize}
+                \item Алгоритмы и структуры данных
+                \begin{itemize}
+                        \item алгоритмы на графах
+                        \item динамическое программирование
+                        \item структуры данных
+                \end{itemize}
+                \item Алгоритмы машинного обучения
+                \begin{itemize}
+                        \item Регрессия (линейная, решающие деревья)
+                        \item Классификация (линрег, SVM, деревья решений)
+                        \item Кластеризация (K-means, DBScan)
+                        \item Ансабли (бэггинг, бустинг)
+                        \item Перцептрон (полносвязные, свёрточные сети)
+                \end{itemize}
+                \item Математическая статистика
+                \item Линейная алгебра, математический анализ
+                \item Дискретная математика
+            \end{itemize}
+        \subsection{Python3}
+            \begin{itemize}
+                \item Математика (numpy)
+                \item Алгоритмы машинного обучения (sklearn, Catboost)
+                \item Визуализация (pandas, matplotlib, seaborn)
+                \item Глубинное обучение (keras, tensorflow)
+            \end{itemize}
+            \subsection{Что-то ещё}
+            \begin{itemize}
+                \item Google Colab
+                \item Jupyter Notebook
+                \item \LaTeX{}
+                \item Linux (Ubuntu, Alpine)
+                \item C/C++, Go
+                \item SQL (Postgres)
+                \item Docker, docker-compose
+                \item git
+            \end{itemize}
+
+    \end{multicols}
+    \section{Другое}
+        \begin{itemize}
+            \item Английский Upper Intermediate, читаю техническую литературу
+        \end{itemize}
+
+
+\end{document}
